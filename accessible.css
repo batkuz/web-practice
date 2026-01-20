@@ -1,0 +1,32 @@
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 1.25rem !important;
+    line-height: 1.8 !important;
+}
+
+a, .navbar a {
+    color: #FFD700 !important; 
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    font-weight: 700 !important;
+}
+
+.navbar, .hero, .workouts, .experience, .testimonials, .membership {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+
+button, .cta-btn, .signin-btn, .explore-btn {
+    font-size: 1.25rem !important;
+    padding: 1rem 2rem !important;
+    border: 2px solid #FFD700 !important;
+    background-color: #000 !important;
+    color: #FFD700 !important;
+}
+
+img {
+    filter: brightness(1.2) contrast(1.5);
+}
+
