@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batmunkh Fitness - Membership</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css" media="print">
+  <link id="accessible-css" rel="stylesheet" href="accessible.css" disabled>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html" class="active" aria-current="page">Membership</a></li>
+      </ul>
+    </nav>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  <main>
+
+    <section class="membership" id="membership">
+      <h1>Join Our Exclusive Membership Programs to Achieve Your Fitness Goals</h1>
+      <div class="programs">
+        <div class="program-photo">
+          <img src="images/training.jpg" alt="My strength Training session in progress">
+        </div>
+        <div class="program-details">
+          <h2>STRENGTH &amp; CONDITIONING</h2>
+          <p>
+            Our signature program combines advanced strength training methodologies with strategic conditioning to build lean muscle, enhance power, and optimize body composition.
+          </p>
+          <ul>
+            <li>✓ Personalized progression plans</li>
+            <li>✓ Performance tracking technology</li>
+            <li>✓ Nutrition protocol integration</li>
+          </ul>
+          <button class="explore-btn" type="button">EXPLORE PROGRAM</button>
+        </div>
+      </div>
+
+      <h2>MEMBERSHIP <span>COMPARISON</span></h2>
+
+      <details>
+        <summary>Show Membership Comparison</summary>
+        <div
+          class="comparison-grid"
+          role="grid"
+          aria-label="Membership Comparison"
+          tabindex="0"
+        >
+ 
+          <div role="row" class="header-row">
+            <div class="header-cell" role="columnheader">Features</div>
+            <div class="header-cell" role="columnheader">Standard</div>
+            <div class="header-cell" role="columnheader">Executive</div>
+            <div class="header-cell" role="columnheader">Elite Black</div>
+          </div>
+
+
+          <div role="row" class="data-row">
+            <div class="data-cell" role="rowheader">24/7 Access</div>
+            <div class="data-cell" role="gridcell">✓</div>
+            <div class="data-cell" role="gridcell">✓</div>
+            <div class="data-cell" role="gridcell">✓</div>
+          </div>
+
+     
+          <div role="row" class="data-row">
+            <div class="data-cell" role="rowheader">Personal Training Sessions</div>
+            <div class="data-cell" role="gridcell">1/month</div>
+            <div class="data-cell" role="gridcell">4/month</div>
+            <div class="data-cell" role="gridcell">Unlimited</div>
+          </div>
+
+
+          <div role="row" class="data-row">
+            <div class="data-cell" role="rowheader">Recovery Spa Access</div>
+            <div class="data-cell" role="gridcell">–</div>
+            <div class="data-cell" role="gridcell">Limited</div>
+            <div class="data-cell" role="gridcell">Unlimited</div>
+          </div>
+
+
+          <div role="row" class="data-row">
+            <div class="data-cell" role="rowheader">Nutrition Consultation</div>
+            <div class="data-cell" role="gridcell">–</div>
+            <div class="data-cell" role="gridcell">Limited</div>
+            <div class="data-cell" role="gridcell">Unlimited</div>
+          </div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <header class="navbar bottom-navbar">
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+    <nav>
+      <ul>
+        <li><a href="contact.html">CONTACT US HERE</a></li>
+      </ul>
+    </nav>
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+  </header>
+
+  <footer>
+    <p>© 2025 Batmunkh Fitness. All rights reserved.</p>
+  </footer>
+
+  <button onclick="toggleAccessibility()" class="accessibility-toggle" aria-pressed="false" aria-label="Toggle high contrast mode">
+    Toggle High Contrast
+  </button>
+
+  <script>
+    function toggleAccessibility() {
+      const link = document.getElementById('accessible-css');
+      link.disabled = !link.disabled;
+
+
+      const btn = document.querySelector('.accessibility-toggle');
+      btn.setAttribute('aria-pressed', String(!link.disabled));
+
+      localStorage.setItem('accessibilityEnabled', !link.disabled);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const enabled = localStorage.getItem('accessibilityEnabled') === 'true';
+      const link = document.getElementById('accessible-css');
+      link.disabled = !enabled;
+
+      const btn = document.querySelector('.accessibility-toggle');
+      btn.setAttribute('aria-pressed', String(enabled));
+    });
+  </script>
+</body>
+</html>

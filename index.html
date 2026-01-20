@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batmunkh Fitness - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link id="accessible-css" rel="stylesheet" href="accessible.css" disabled>
+  
+  <style>
+    
+    iframe {
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  
+  <header class="navbar">
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+    <nav>
+      <ul>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+      </ul>
+    </nav>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  <style>
+  .carousel-inner img {
+    height: 100px;
+    object-fit: cover;
+  }
+</style>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/image1.jpg" class="d-block w-100" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image2.jpg" class="d-block w-100" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image3.jpg" class="d-block w-100" alt="Third slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+ 
+  <section class="hero" id="home">
+    <h1>ELEVATE YOUR <span>FITNESS</span></h1>
+    <p>
+      Experience the pinnacle of <span class="highlight">LUXURY FITNESS</span> at
+      Elite Fitness. Where excellence meets exclusivity.
+    </p>
+    <button class="cta-btn">JOIN THE ELITE</button>
+  </section>
+
+  
+  <main id="main-content" tabindex="-1">
+    
+  </main>
+
+  
+  <section class="experience" id="experience">
+    <h2>EXPERIENCE <span class="batmunkh">BATMUNKH</span></h2>
+    <div class="video-container">
+      <iframe
+        width="1250"
+        height="500"
+        src="https://www.youtube.com/embed/QkCa--fyGjA?start=142"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="Experience Elite Fitness Video"
+      ></iframe>
+    </div>
+    <details>
+      <summary>Full text description of the video</summary>
+      <p>The video begins at 2 minutes and 22 seconds showing a busy urban street scene. Cars drive by as pedestrians walk along the sidewalk. The narrator introduces the topic, explaining the challenges of city traffic. Visuals shift to highlight traffic lights, crosswalks, and people waiting at intersections. Background sounds include city noise, footsteps, and occasional car horns.</p>
+      <p>At 3 minutes, the video cuts to an interview with a traffic expert who discusses solutions to improve traffic flow. The expert gestures to a digital map displaying traffic patterns. The narrator summarizes the expert's points.</p>
+      <p>The video ends with a wide shot of the city skyline at sunset, with the narrator emphasizing the need for sustainable urban planning.</p>
+    </details>
+    <p>
+      Discover how Elite Fitness is redefining the luxury gym experience
+      through innovation, exclusivity, and results.
+    </p>
+  </section>
+
+  
+  <section class="testimonials" id="testimonials">
+    <div class="member-photo">
+      <a href="images/member.jpg" target="_blank">
+        <img src="images/member.jpg" alt="Photo of Batmunkh, Elite Fitness member">
+      </a>
+    </div>
+    <div class="testimonial-text">
+      <h3>MEMBER <span>TESTIMONIALS</span></h3>
+      <blockquote>
+        <p>
+          "As a professional athlete, I demand the best. Elite Fitness
+          delivers with cutting-edge equipment and recovery facilities that
+          keep me at peak performance."
+        </p>
+        <footer>- Batmunkh, CEO, Tech Innovations, Professional Athlete</footer>
+      </blockquote>
+    </div>
+    <div class="muscle-icon">
+      <a href="images/muscle.jpg" target="_blank">
+        <img src="images/muscle.jpg" alt="Muscle icon representing strength">
+      </a>
+    </div>
+  </section>
+
+  
+  <header class="navbar bottom-navbar">
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+    <nav>
+      <ul>
+        <li><a href="contact.html">CONTACT US HERE</a></li>
+      </ul>
+    </nav>
+    <div class="logo">FITNESS <span>BATMUNKH</span></div>
+  </header>
+
+  <footer>
+    <p>© 2025 Batmunkh Fitness. All rights reserved.</p>
+  </footer>
+
+  
+  <button onclick="toggleAccessibility()" class="accessibility-toggle" aria-pressed="false" aria-label="Toggle High Contrast Mode">
+    Toggle High Contrast
+  </button>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function toggleAccessibility() {
+      const link = document.getElementById('accessible-css');
+      link.disabled = !link.disabled;
+      localStorage.setItem('accessibilityEnabled', !link.disabled);
+      
+      const btn = document.querySelector('.accessibility-toggle');
+      btn.setAttribute('aria-pressed', (!link.disabled).toString());
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const enabled = localStorage.getItem('accessibilityEnabled') === 'true';
+      const link = document.getElementById('accessible-css');
+      link.disabled = !enabled;
+      const btn = document.querySelector('.accessibility-toggle');
+      btn.setAttribute('aria-pressed', enabled.toString());
+    });
+  </script>
+</body>
+</html>
+
