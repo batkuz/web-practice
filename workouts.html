@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Batmunkh Fitness - Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+    <link id="accessible-css" rel="stylesheet" href="accessible.css" disabled />
+</head>
+<body>
+
+
+    <header class="navbar">
+        <div class="logo">BATMUNKH <span>FITNESS</span></div>
+        <nav>
+            <ul>
+                <li><a href="workouts.html" class="active" aria-current="page">Workouts</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+        <button class="signin-btn">Sign In</button>
+    </header>
+
+
+    <section class="workouts" id="workouts">
+        <h2>Explore Our Premium Workouts Designed for Your Fitness Success</h2>
+        <div class="workouts-links">
+            <a href="#">PREMIUM</a>
+            <a href="#">EXPERIENCE</a>
+        </div>
+        <div class="workouts-grid">
+            <div class="workout-item">
+                <img src="images/peace.jpg" alt="State-of-the-art equipment" />
+                <h3>STATE-OF-THE-ART EQUIPMENT</h3>
+                <p>The latest in fitness technology, exclusively selected for optimal results.</p>
+            </div>
+            <div class="workout-item">
+                <img src="images/trainer.jpg" alt="(Me) Elite personal trainer" />
+                <h3>ELITE PERSONAL TRAINER</h3>
+                <p>World-class coaches dedicated to your transformation and success.</p>
+            </div>
+            <div class="workout-item">
+                <img src="images/spa.jpg" alt="Recovery Spa" />
+                <h3>RECOVERY SPA</h3>
+                <p>Rejuvenate in our premium recovery facilities after your intense workout.</p>
+            </div>
+        </div>
+    </section>
+
+    <header class="navbar bottom-navbar">
+        <div class="logo">BATMUNKH <span>FITNESS</span></div>
+        <nav>
+            <ul>
+                <li><a href="contact.html">CONTACT US HERE</a></li>
+            </ul>
+        </nav>
+        <div class="logo">FITNESS <span>BATMUNKH</span></div>
+    </header>
+
+    <footer>
+        <p>© 2025 Batmunkh Fitness. All rights reserved.</p>
+    </footer>
+
+    <button onclick="toggleAccessibility()" class="accessibility-toggle">
+        Toggle High Contrast
+    </button>
+
+    <script>
+        function toggleAccessibility() {
+            const link = document.getElementById('accessible-css');
+            link.disabled = !link.disabled;
+
+        
+            localStorage.setItem('accessibilityEnabled', !link.disabled);
+        }
+
+   
+        window.addEventListener('DOMContentLoaded', () => {
+            const enabled = localStorage.getItem('accessibilityEnabled') === 'true';
+            document.getElementById('accessible-css').disabled = !enabled;
+        });
+    </script>
+</body>
+</html>

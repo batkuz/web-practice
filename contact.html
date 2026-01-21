@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batmunkh Fitness - Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="print.css" media="print">
+  <link id="accessible-css" rel="stylesheet" href="accessible.css" disabled>
+
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #e0e0e0;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #dddddd;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #555;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border-radius: 6px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    button {
+      align-self: center;
+      padding: 12px 24px;
+      background-color: #6b5f1a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background-color: #ffd700;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #2b2b2b;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .navbar span {
+      color: #ffd700;
+    }
+
+    .navbar nav ul {
+      list-style: none;
+      display: inline-flex;
+      gap: 200px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .navbar nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .navbar nav ul li a:hover {
+      color: #6d19db;
+    }
+
+    .signin-btn {
+      background-color: #6b5f1a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .signin-btn:hover {
+      background-color: #ffd700;
+    }
+    .form-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;          
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+  gap: 12px;              
+  margin-bottom: 20px;    
+}
+
+input[type="text"],
+textarea {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+button[type="submit"] {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-instructions {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #2a2a2a;
+  padding: 20px 30px;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-instructions h2 {
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.form-instructions ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.form-instructions ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.form-instructions strong {
+  color: #fff;
+}
+
+.form-instructions em {
+  font-style: normal;
+  color: #bbb;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">BATMUNKH <span>FITNESS</span></div>
+    <nav>
+      <ul>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+
+      </ul>
+    </nav>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  
+  <div class="contact-container" id="contact">
+  <h1>Contact Us</h1>
+
+  <form action="https://formsubmit.co/c8bc625e6b74e0740fef7f5dcb8352f5" method="POST">
+    
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+
+
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your Name" size="30" maxlength="50" />
+
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Your message..." maxlength="500"></textarea>
+
+    <div class="form-center-wrapper">
+      
+      <label>Preferred Contact Method:</label>
+      <div class="radio-group">
+  <input type="radio" id="email" name="contact_method" value="email" required />
+  <label for="email">Email</label>
+
+  <input type="radio" id="phone" name="contact_method" value="phone" />
+  <label for="phone">Phone</label>
+
+  <input type="radio" id="instagram" name="contact_method" value="instagram" />
+  <label for="instagram">Instagram</label>
+
+  <input type="radio" id="facebook" name="contact_method" value="facebook" />
+  <label for="facebook">Facebook</label>
+
+  <input type="radio" id="no_preference" name="contact_method" value="no_preference" />
+  <label for="no_preference">No Preference</label>
+</div>
+
+
+      
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="subscribe" /> Subscribe to newsletter</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+<section class="form-instructions">
+  <h2>How to Fill the Contact Form</h2>
+  <ul>
+    <li><strong>Name:</strong> Enter your <em>full name</em> (required).</li>
+    <li><strong>Message:</strong> Write your <em>detailed message</em> or question (required).</li>
+    <li><strong>Preferred Contact Method:</strong> Choose one option:
+      <ul>
+        <li><strong>Email</strong></li>
+        <li><strong>Phone</strong></li>
+      </ul>
+    </li>
+    <li><strong>Newsletter Subscription:</strong> Tick the box if you want to <em>subscribe</em> (optional).</li>
+    <li><strong>Submit:</strong> Click the <em>Send Message</em> button to send your form.</li>
+  </ul>
+</section>
+
+
+  <footer>
+    <p>© 2025 Batmunkh Fitness. All rights reserved.</p>
+  </footer>
+
+  <button onclick="toggleAccessibility()" class="accessibility-toggle">
+    Toggle High Contrast
+  </button>
+
+  <script>
+    function toggleAccessibility() {
+      const link = document.getElementById('accessible-css');
+      link.disabled = !link.disabled;
+      localStorage.setItem('accessibilityEnabled', !link.disabled);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const enabled = localStorage.getItem('accessibilityEnabled') === 'true';
+      document.getElementById('accessible-css').disabled = !enabled;
+    });
+  </script>
+</body>
+</html>

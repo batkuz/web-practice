@@ -1,0 +1,48 @@
+
+header,
+nav,
+aside,
+.menu,
+.sidebar,
+footer,
+video,
+button,
+input,
+form {
+  display: none !important;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #000;
+  background: none;
+  margin: 1.5cm;
+}
+
+main,
+article,
+section {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  page-break-inside: avoid;
+  orphans: 3;
+  widows: 3;
+}
+
+table, blockquote, pre {
+  page-break-inside: avoid;
+}
+
+a::after {
+  content: "";
+}
